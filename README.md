@@ -1,4 +1,6 @@
-# newspaper-vuejs
+# News Paper
+
+A single news website using [VueJS](https://vuejs.org/), [TailwindCSS](https://tailwindcss.com/). and [News API](https://newsapi.org/)
 
 ## Project setup
 ```
