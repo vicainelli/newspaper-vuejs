@@ -21,7 +21,7 @@
             <img class="h-16" alt="The VueJS News Logo" src="../assets/images/the-vuejs-news.png">
         </div>
         <div class="flex justify-center text-xs items-center">
-          <div class="px-2">Monday, August 13, 2018</div>
+          <div class="px-2">{{ today }}</div>
           <div class="px-2 border-l border-r"><i class="fa fa-file mr-1"></i><a href="" class="no-underline text-black hover:underline">Today’s Paper</a></div>
           <div class="border-r"><button class="py-1 px-2 rounded hover:bg-grey-lighter"><i class="fa fa-cloud text-grey"></i> 59°F</button></div>
           <div class=""><button class="py-1 px-2 rounded hover:bg-grey-lighter">Shanghai <span class="text-red">0.00%</span></button></div>
@@ -62,6 +62,10 @@
 <script>
 export default {
   name: 'Header',
-
+  data: function() {
+    return {
+      today:  this.$moment().format('MMMM Do YYYY')
+    }
+  }
 }
 </script>
