@@ -64,7 +64,8 @@ export default {
   name: 'Header',
   data: function() {
     return {
-      today:  this.$moment().format('MMMM Do YYYY')
+      // today:  'this.$moment().format('MMMM Do YYYY')'
+      today:  this.$format(new Date(), 'MMMM Do YYYY')
     }
   }
 }
