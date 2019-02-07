@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
-import moment from 'moment'
+import { format } from 'date-fns'
 
 Vue.config.productionTip = false
-Object.defineProperty(Vue.prototype, '$moment', { value: moment });
+Object.defineProperty(Vue.prototype, '$format', { value: format })
 
 new Vue({
   render: h => h(App)
