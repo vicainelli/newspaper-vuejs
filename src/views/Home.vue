@@ -1,11 +1,9 @@
 <template>
-  <div class="home">
-    <img alt="The Vue News logo" src="../assets/images/logo.svg" />
-  </div>
+  <div class="home"></div>
 </template>
 
 <script>
 export default {
-  name: "home"
-};
+  name: 'home'
+}
 </script>
