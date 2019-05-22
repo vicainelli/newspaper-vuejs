@@ -1,10 +1,10 @@
-import Vue from 'vue'
-import App from './App.vue'
-import { format } from 'date-fns'
+import Vue from "vue";
+import App from "./App.vue";
+import router from "./router";
 
-Vue.config.productionTip = false
-Object.defineProperty(Vue.prototype, '$format', { value: format })
+Vue.config.productionTip = false;
 
 new Vue({
+  router,
   render: h => h(App)
-}).$mount('#app')
+}).$mount("#app");

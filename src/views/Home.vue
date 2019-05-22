@@ -1,15 +1,11 @@
 <template>
-  <div>
-    <h1>Vue News</h1>
-    <Header></Header>
+  <div class="home">
+    <img alt="The Vue News logo" src="../assets/images/logo.svg" />
   </div>
 </template>
 
 <script>
-import Header from '../components/Header.vue'
 export default {
-  components: {
-    Header
-  }
-}
+  name: "home"
+};
 </script>
